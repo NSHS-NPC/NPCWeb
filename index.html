@@ -124,6 +124,16 @@
 				border-radius: 50%;
 				object-fit: cover; /* This will crop the image into a circle */
 			}
+			@media (max-width: 768px) {
+											/* For screens with a maximum width of 768px (typical mobile screens) */
+											.team-section {
+												flex-direction: column; /* Display team members sequentially */
+											}
+						
+											.team-member {
+												flex: 0 1 100%; /* Take up full width of the container */
+											}
+										}
 		</style>
 		<section class="team-section">
 			<div class="team-member">
